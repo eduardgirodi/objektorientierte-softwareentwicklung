@@ -1,0 +1,36 @@
+Das Programm gibt folgende Text aus:
+
+1: false
+2: true
+3: 45
+4: 45
+5: 28
+6: 16
+7: 10.0
+
+Die erste Zeile wird ausgegeben, weil 15 ungleich 34 ist.
+
+Die zweite Zeile wird ausgegeben, weil 15 gleich 34 - 19 ist.
+
+Die dritte Zeile wird ausgegeben, weil der bitweise XOR-Operator angewendet auf
+die Variablen a und b, der binären als Integer interpretierten Kodierung, dem
+Wert 45 entspricht.
+
+Die vierte Zeile wird ausgegeben, weil die Variable a erst nach Bewertung des
+Ausdruck inkrementiert wird.
+
+Die fünfte Zeile entsteht so: Bevor der Ausdruck bewertet wird, wird die
+Variable c inkrementiert. Anschließen wird die Nummer 7 um zwei Stellen nach
+rechts geshiftet. Das entspricht einer Multiplikation der Zahl mit 2 hoch 2.
+
+Die sechste Zeile entsteht so: Alle drei Variablen a, b und c werden mit 16
+belegt, die in Hex-Notation im Code steht.
+Zuerst wird c, dann b und als letztes a belegt. Der Zuweisungsoperator gibt
+zugewiesenen Wert zurück.
+
+Die letzte Zeile gibt die Gleitkommazahl 10 aus, die in Exponential-Notation im
+Code steht. Diese Notation führt dazu, dass der Wert als Double interpretiert
+wird.
+
+Anschließend beendet das Programm mit Exit-Code 0.
+
