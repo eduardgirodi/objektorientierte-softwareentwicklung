@@ -1,0 +1,6 @@
+6.5f ist vom Datentyp float. 6.5 hat den Datentyp double. Bei dem Wert, der der
+reellen Zahl 6,5 entsprechen soll, sind double und float präzise genug, um den
+Wert ohne Rundungsfehler abzubilden.
+Bei 6,4 ist es anders. Da float eine geringere Bitbreite hat ist der
+Rundungsfehler größer als bei doubles. Darum haben 6.4 und 6.4f
+unterschiedliche Werte.
