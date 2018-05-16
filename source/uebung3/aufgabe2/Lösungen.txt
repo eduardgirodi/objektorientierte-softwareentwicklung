@@ -1,0 +1,4 @@
+a)  Es fällt auf, dass die Attribute beider Sheep-Objekte verändert werden, obwohl diese Veränderungen
+    oberflächlich nur auf das Klon ausgeführt wurden.
+
+b)
