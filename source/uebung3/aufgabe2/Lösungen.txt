@@ -1,4 +1,10 @@
 a)  Es fällt auf, dass die Attribute beider Sheep-Objekte verändert werden, obwohl diese Veränderungen
     oberflächlich nur auf das Klon ausgeführt wurden.
 
-b)
+b)  Die Ausgaben unterscheiden sich. Da durch das Deep Clone alle Attribute unabhängig kopiert werden, nimmt das Sheep
+    Klon, welches durch Shallow Copy geklont wurde nur die Attributsveränderungen vom Shallow Copy an.
+
+d)  Das Interface Cloneable sorgt dafür, dass bei geklonten (vor allem komplexerren) Objekten nicht referenziert wird,
+    sondern eine exakte Kopie erstellt wird, wodurch das neue geklonte Objekt zwar die selben Werte besitzt,
+    jedoch beide Objekte völlig unabhängig voneinander sind, was bei einer einfachen Referenzierung nicht der Fall ist
+    (siehe Aufgabe 2a).

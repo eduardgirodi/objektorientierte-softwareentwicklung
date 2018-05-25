@@ -8,6 +8,8 @@ public class Fur {
         this.length = length;
     }
 
+    public Fur(Fur original) { this.length = original.length; }
+
     public String toString() {
         return "Felllaenge: " + length;
     }
