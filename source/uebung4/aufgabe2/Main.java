@@ -17,13 +17,13 @@ public class Main {
         8
         8
 
-    b)
+    b)      (getReifen()-Methode  aus  der  Klasse Lastwagen entfernt)
         4
         8
         4
         4
 
-    c)
+    c)      (getReifen()-Methode aus der Klasse Auto entfernt)
         4
         8
         (keine Ausgabe möglich)
