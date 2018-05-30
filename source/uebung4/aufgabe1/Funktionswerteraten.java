@@ -19,26 +19,24 @@ public class Funktionswerteraten extends Spiel {
         System.out.println("Ein Versuch: Schätzen des y-Wertes der folgenden Funktion.");
         int xValue = 0;
         int yValue = 0;
+        IEvaluierbar temp = null;
         switch(function) {
             case 0: {                                                       //Efunktion
                 xValue = r.nextInt(21)+1;                           //xValue zwischen 1 und 21 (inkl.)
-                Efunktion e = new Efunktion();
-                yValue = e.evaluate(xValue);
-                System.out.println(e.getName());
-                System.out.println("x = "+xValue);
-                System.out.println("(Tipp: y = " +yValue +")");              //Experimental
+                temp = new Efunktion();
                 break;
             }
             case 1: {                                                       //LineareFunktion
-                xValue = r.nextInt(MAXIMUM)+1;                              //xValue zwischen 1 und 50 (inkl)
-                System.out.println("x = "+xValue);
-                LineareFunktion lf = new LineareFunktion();
-                yValue = lf.evaluate(xValue);
-                System.out.println(lf.getName());
-                System.out.println("(Tipp: y = " +yValue +")");              //Experimental
+                xValue = r.nextInt(MAXIMUM)+1;                              //xValue zwischen 1 und 50 (inkl.)
+                temp = new LineareFunktion();
                 break;
             }
         }
+        yValue = temp.evaluate(xValue);
+        System.out.println("x = "+xValue);
+        System.out.println(temp.getName());
+        System.out.println("(Tipp: y = " +yValue +")");
+
         Scanner scanner = new Scanner(System.in);
         int guess = scanner.nextInt();                                      //Geschätzte Zahl wird eingelesen
         if(guess==yValue){                                                  //Schätzung gleicht y-Wert
