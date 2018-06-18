@@ -1,24 +1,60 @@
 package uebung4.aufgabe4;
 
-public class Person implements Comparable {
+public class Person implements Comparable<Person> {
     private String name;
     private String vorname;
-    private int plz;
-    private String straße;
+    private String plz;
+    private String strasse;
     private int hausnr;
 
-    public Person(String pName, String pVorname, int pLZ, String pStraße, int pHausnr) {
-        this.name=pName;
-        this.vorname=pVorname;
-        this.plz=pLZ;
-        this.straße=pStraße;
-        this.hausnr=pHausnr;
+    public Person(String pName, String pVorname, String pLZ, String pStrasse, int pHausnr) {
+        this.name = pName;
+        this.vorname = pVorname;
+        this.plz = pLZ;
+        this.strasse = pStrasse;
+        this.hausnr = pHausnr;
     }
 
-    public int compareTo(Object o) {
+    public int compareTo(Person o) {
         if(o == null) return -1;
-        if(o instanceof Person) {
-            Person that = (Person) o;
+        Person that = o;
+
+        if(this.name.compareTo(that.name)<0) {
+            return -1;
+        } else if(this.name.compareTo(that.name)>0){
+            return 1;
+        }
+
+        if(this. vorname.compareTo(that.vorname)<0) {
+            return -1;
+        } else if(this. vorname.compareTo(that.vorname)>0){
+            return 1;
+        }
+
+        if(this.plz.compareTo(that.plz)<0) {
+            return -1;
+        } else if(this.plz.compareTo(that.plz)>0){
+            return 1;
+        }
+
+        if(this.strasse.compareTo(that.strasse)<0) {
+            return -1;
+        } else if(this.strasse.compareTo(that.strasse)>0){
+            return 1;
+        }
+
+        if(this.hausnr<that.hausnr) {
+            return -1;
+        } else if(this.hausnr>that.hausnr){
+            return 1;
+        }
+        return 0;
+    }
+
+    /**
+    public int compareTo(Person o) {
+        if(o == null) return -1;
+            Person that = o;
             if(this.name==that.name) {
                 if(this.vorname==that.vorname) {
                     if(this.plz==that.plz) {
@@ -50,11 +86,10 @@ public class Person implements Comparable {
             }else {
                 return 1;
             }
-        }
-        return -2;
     }
+    **/
 
     public void printPerson() {
-        System.out.println(this.name +" " +this.vorname +" " +this.plz +" " +this.straße +" " +this.hausnr);
+        System.out.println(this.name +" " +this.vorname +" " +this.plz +" " +this.strasse +" " +this.hausnr);
     }
 }
