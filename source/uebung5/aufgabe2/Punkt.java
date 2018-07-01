@@ -11,18 +11,13 @@ public class Punkt {
         this.z = z;
     }
 
-    public int getZ() {
-        return z;
-    }
+    public int getZ() { return z; }
 
     public void setZ(int z) {
         this.z = z;
     }
 
-    public int getX() {
-
-        return x;
-    }
+    public int getX() { return x; }
 
     public void setX(int x) {
         this.x = x;

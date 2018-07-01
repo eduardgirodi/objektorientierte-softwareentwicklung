@@ -1,10 +1,10 @@
 package uebung5.aufgabe2;
 
-public abstract class Körper {
+public abstract class Koerper {
     private final String art;
     private final Punkt center;
 
-    public Körper(String art, Punkt center) {
+    public Koerper(String art, Punkt center) {
         this.art = art;
         this.center = center;
     }
@@ -17,11 +17,9 @@ public abstract class Körper {
         center.setX(center.getX() + x);
     }
 
-
     public void moveY(int y) {
         center.setX(center.getY() + y);
     }
-
 
     public void moveZ(int z) {
         center.setX(center.getZ() + z);
@@ -37,7 +35,7 @@ public abstract class Körper {
 
     @Override
     public String toString() {
-        return "Körper{" +
+        return "Koerper{" +
                 "art='" + art + '\'' +
                 ", center=" + center +
                 ", volume=" + getVolume() +

@@ -6,7 +6,8 @@ class CallEg {
         try {
             methodB();
         } catch (ArithmeticException oops) {
-            oops.printStackTrace();                         //Wird nicht ausgegeben, da Exception schon behandelt
+            oops.printStackTrace();
+            throw oops;//Wird ausgegeben
         }
     }
 
@@ -14,7 +15,8 @@ class CallEg {
         try {
             methodC();
         } catch (ArithmeticException oops) {
-            oops.printStackTrace();                         //Wird nicht ausgegeben, da Exception schon behandelt
+            oops.printStackTrace();
+            throw oops;//Wird ausgegeben
         }
     }
 
@@ -23,6 +25,7 @@ class CallEg {
             int a = 1/0;
         } catch (ArithmeticException oops) {
             oops.printStackTrace();                         //Wird ausgegeben
+            throw oops;
         }
     }
 }

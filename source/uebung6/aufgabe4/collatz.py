@@ -4,9 +4,9 @@ def collatz(n):
 	print(n)
 	while (n > 1):
 		if (n % 2 == 0):
-			n = round(n / 2)
+			n = int(n / 2)
 		else:
-			n = round(3 * n + 1)
+			n = 3 * n + 1
 		print(n)
 	return
 

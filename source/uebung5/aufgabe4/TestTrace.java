@@ -6,7 +6,7 @@ public class TestTrace {
         try {
             eg.methodA();
         } catch (ArithmeticException oops) {
-            oops.printStackTrace();                             //Wird nicht ausgegeben, da Exception schon behandelt
+            oops.printStackTrace();                             //Wird ausgegeben
         }
     }
 }

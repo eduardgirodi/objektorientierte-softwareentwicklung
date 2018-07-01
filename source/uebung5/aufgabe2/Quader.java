@@ -1,6 +1,6 @@
 package uebung5.aufgabe2;
 
-public class Quader extends Körper {
+public class Quader extends Koerper {
     private double xLength;
     private double yLength;
     private double zLength;

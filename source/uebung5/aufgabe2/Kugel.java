@@ -1,6 +1,6 @@
 package uebung5.aufgabe2;
 
-public class Kugel extends Körper {
+public class Kugel extends Koerper {
     private double radius;
 
     public Kugel(Punkt center, double radius) {

@@ -15,7 +15,7 @@ public class Angestellter {
     }
 
     public void erhoeheBetragUm(int pDelta) {
-        this.gehalt = this.gehalt + pDelta;
+        this.gehalt += pDelta;
     }
 
     public void geburtstag() {
