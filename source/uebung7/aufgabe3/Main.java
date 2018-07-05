@@ -29,7 +29,7 @@ public class Main {
 		 *    werden (= schlechter Stil)
 		 * 
 		 * Unterklassen von Exception stellen gepruefte Exceptions dar
-		 * => Fehler, die w�hrend der Programmausfuehrung auftreten k�nnen
+		 * => Fehler, die waehrend der Programmausfuehrung auftreten koennen
 		 * => sollten mit try / catch Bloecken abgefangen werden oder
 		 *    mit dem Kennwort throws weitergegeben werden
 		 *    
